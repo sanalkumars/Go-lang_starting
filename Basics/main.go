@@ -13,5 +13,5 @@ func main() {
     fmt.Println("multiple vars",A,b,c,d)
 
     // calling the array in the main.go file for running that to
-    // arrys()
+    arrys()
 }
