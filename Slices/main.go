@@ -41,6 +41,28 @@ func main() {
 
 	fmt.Println("updated slice",scores)
 
+	// duplicating a slice
+	dup := make([]int,len(scores))  //creates a new slice with the same length as the source we given, but no value
 
+	// to copy the value into the new slice use copy()
+	copy(dup,scores)
+	fmt.Println("duplicated slice",dup)
 
+	// looping through the slice using for-range
+	for i , val := range scores {
+		fmt.Printf("index = %d , value is %d \n",i,val)
+	}
+
+	// clearing/reseting the created slice to empty
+	dup = dup[:0]
+	fmt.Println("cleared duplicate slice is ",dup)
+
+	// slice creatde using new method , this is not a recommented method
+	newslice := new([]int)
+	// fmt.Print("new based slice",newslice)
+	// to assing value to the slice created using new need to use make to give a size then assign value
+	*newslice = make([]int, 3)
+
+	(*newslice)[0] =111
+	fmt.Print(newslice)
 }
