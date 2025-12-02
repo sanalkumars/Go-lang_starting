@@ -30,7 +30,7 @@ func (u User)getUserStatus()  {
 	fmt.Println("user status is ",u.Status)
 }
 
-// funcation for manupulating the values for the created object/structure
+// funcation for manupulating the values for the created object/structure 
 
 // this is tempporary as we only pass a copy of the original structure
 func (u User)changeStatus()  {
