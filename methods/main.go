@@ -17,11 +17,31 @@ type User struct {
 func main() {
 	fmt.Print("structure in go lang \n")
 
-	sanal := User{ Name: "Sanal",Age: 23,Address: Address{City: "halo",House_No: 212},Status: "active"}
+  // Method 1: Named fields (recommended)
+    sanal := User{
+        Name:   "Sanal",
+        Age:    23,
+        Address: Address{City: "halo", House_No: 212},
+        Status: "active",
+    }
 	sanal.getUserStatus()
 	sanal.changeStatus()
 	sanal.changeStatusPermenent()
 	sanal.getUserStatus()
+
+	 // Method 2: Positional values
+    john := User{"John", 25, Address{101,"New York" }, "active"}
+
+    // Method 3: Using pointer to create object
+    mike := &User{
+        Name:   "Mike",
+        Age:    30,
+        Status: "inactive",
+    }
+
+    fmt.Println(sanal)
+    fmt.Println(john)
+    fmt.Println(mike)
 
 
 }
