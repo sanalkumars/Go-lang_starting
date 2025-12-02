@@ -32,7 +32,7 @@ func (u User)getUserStatus()  {
 
 // funcation for manupulating the values for the created object/structure
 
-
+// this is tempporary as we only pass a copy of the original structure
 func (u User)changeStatus()  {
 	u.Status ="inactive" // this change is only temporary, as we are only passing the copy of the original object
 	fmt.Println("new status is ",u.Status) 
