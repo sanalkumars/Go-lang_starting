@@ -21,6 +21,9 @@ func main() {
 	fmt.Println("result for slice adding is ",result , message);
 
 
+
+
+
 }
 
 func adder(num1 , num2  int) int  {
@@ -29,6 +32,7 @@ func adder(num1 , num2  int) int  {
 
 // if we want to return multiple values of different types 
 // instead of return type as int put the types of the return value types in a ()
+// variadic funcations (function that takes n number of parameters)
 
 func proAdd( val ...int) (int , string)  {
 	// now the argument is a slice, so for adding we need to loop through
@@ -39,3 +43,8 @@ func proAdd( val ...int) (int , string)  {
 	}
 	return total , "Hi user , this is ur total"
 }
+
+
+
+
+
